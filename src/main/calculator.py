@@ -13,9 +13,9 @@ class Calculator(object):
         return product # return product
 
     def divide(self, a, b):
-        if (b == 0):
-            print("invalid zero division")
-        else:
-            quotient = round(a / b, 3)
+        # if (b == 0):
+        #     print("invalid zero division")
+        # else:
+            quotient = round((a / b), 3)
             return quotient # return quotient
 
