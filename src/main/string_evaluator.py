@@ -19,13 +19,13 @@ class StringManipulator(object):
         return exclusive_op  # exclusive string manipulation
 
     def compare(self, first_value, second_value):   # compare two strings
-        string_comp = bool(first_value == second_value)
+        return bool(first_value == second_value)
         # if (first_value == second_value) |
         #    (first_value == False &  second_value == 0) |
-        #    (first_value == True &  second_value == 1)):
+        #    (first_value == True &  second_value == 1):
         #     return True
         # else:
-        return string_comp
+        # return False
 
     def get_middle_character(self, string_to_fetch_from):
         i = [len(string_to_fetch_from) / 2]
@@ -33,11 +33,11 @@ class StringManipulator(object):
         return mid_char # return the middle character
 
     def get_first_word(self, string_to_fetch_from):
-        first_word = string_to_fetch_from.split()[0]
+        first_word = string_to_fetch_from.split[0]
         return first_word  # return the first word
 
     def get_second_word(self, string_to_fetch_from):
-        second_word = string_to_fetch_from.split()[1]
+        second_word = string_to_fetch_from.split[1]
         return second_word  # return the second word
 
     def reverse(self, string_to_be_reversed):
