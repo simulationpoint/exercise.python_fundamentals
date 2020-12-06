@@ -19,7 +19,7 @@ class StringManipulator(object):
         return exclusive_op  # exclusive string manipulation
 
     def compare(self, first_value, second_value):   # compare two strings
-        if [first_value == second_value]:
+        if first_value == second_value:
             return True
         else:
             return False
