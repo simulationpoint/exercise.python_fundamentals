@@ -18,8 +18,12 @@ class StringManipulator(object):
         exclusive_op = (string_to_fetch_from[starting_index + 1:ending_index])
         return exclusive_op  # exclusive string manipulation
 
-    def compare(self, first_value, second_value):   # compare two strings
-        if first_value is second_value:
+    def compare(self, first_value, second_value): # compare two strings
+        if (str(first_value) == str(second_value)
+                or (first_value is True and second_value == 1)
+                or (first_value is False and second_value == 0)
+                or (first_value is None and second_value == 0)
+                or (first_value is "0" and second_value == 0)):
             return True
         else:
             return False
@@ -30,12 +34,12 @@ class StringManipulator(object):
         return mid_char # return the middle character
 
     def get_first_word(self, string_to_fetch_from):
-        first_word = string_to_fetch_from.split()[0]
-        return first_word  # return the first word
+        first_word = string_to_fetch_from.split()
+        return first_word[0]  # return the first word
 
     def get_second_word(self, string_to_fetch_from):
-        second_word = string_to_fetch_from.split()[1]
-        return second_word  # return the second word
+        second_word = string_to_fetch_from.split()
+        return second_word[1]  # return the second word
 
     def reverse(self, string_to_be_reversed):
         reverse_string = (string_to_be_reversed[::-1])
