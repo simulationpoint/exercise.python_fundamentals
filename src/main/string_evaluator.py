@@ -34,14 +34,22 @@ class StringManipulator(object):
         return mid_char # return the middle character
 
     def get_first_word(self, string_to_fetch_from):
-        i = string_to_fetch_from.split(' ')
-        first_word = i[0]
-        return first_word  # return the first word
+        string_list = ' '
+        for i in string_to_fetch_from:
+            if i == string_list[0]:
+                return i[0]  # return the first word
+            else:
+                text = "list index out of range"
+                return text
 
     def get_second_word(self, string_to_fetch_from):
-        i = string_to_fetch_from.split(' ')
-        second_word = i[1]
-        return second_word  # return the second word
+        string_list = ' '
+        for i in string_to_fetch_from:
+            if i == string_list[1]:
+                return i[1]  # return the second word
+            else:
+                text = "list index out of range"
+                return text
 
     def reverse(self, string_to_be_reversed):
         reverse_string = (string_to_be_reversed[::-1])
