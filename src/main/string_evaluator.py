@@ -3,7 +3,7 @@
 #
 class StringManipulator(object):
     def get_hello_world(self):
-        message = "Welcome to DevOps 2020"
+        message = "Hello World"
         return message  # return string
 
     def concatenate(self, value_to_be_added_to, value_to_add):
@@ -19,21 +19,10 @@ class StringManipulator(object):
         return exclusive_op  # exclusive string manipulation
 
     def compare(self, first_value, second_value):   # compare two strings
-        if first_value > second_value:
-            text1 = "first string value is greater"
-            return text1
-        elif first_value < second_value:
-            text2 = "first string value is less than the second string"
-            return text2
-        elif first_value == second_value:
-            text3 = "the two values are equal"
-            return text3
-        elif first_value != second_value:
-            text4 = " The two sting values are different"
-            return text4
+        if [first_value == second_value]:
+            return True
         else:
-            text5 = "Invalid string , Nothing to compare"
-            return text5
+            return False
 
     def get_middle_character(self, string_to_fetch_from):
         i = [len(string_to_fetch_from) / 2]
