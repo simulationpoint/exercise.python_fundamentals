@@ -33,12 +33,10 @@ class StringManipulator(object):
         return mid_char # return the middle character
 
     def get_first_word(self, string_to_fetch_from):
-        first_word = string_to_fetch_from.split[0]
-        return first_word  # return the first word
+        return string_to_fetch_from.split()[0] # return the first word
 
     def get_second_word(self, string_to_fetch_from):
-        second_word = string_to_fetch_from.split[1]
-        return second_word  # return the second word
+        return string_to_fetch_from.split()[1] # return the second word
 
     def reverse(self, string_to_be_reversed):
         reverse_string = (string_to_be_reversed[::-1])
