@@ -43,7 +43,7 @@
     4. open a module to be edited (`calculator.py`)
     5. run corresponding tests for the module to be edited (`calculator_test.py`)
 
-<a href="https://raw.githubusercontent.com/platformps/exercise.python_fundamentals/master/getting-started.gif"><img src="./getting-started.gif"></a>
+
     
     
 ### Running Tests From Command Line 

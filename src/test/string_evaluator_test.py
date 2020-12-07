@@ -1,3 +1,4 @@
+# Created by Leon Hunter at 3:57 PM 10/23/2020
 from unittest import TestCase
 
 from src.main.string_evaluator import StringManipulator
@@ -76,7 +77,7 @@ class StringManipulatorTest(TestCase):
         for value_set in value_sets:
             # given
             first_value = value_set[0]
-            expected_output = value_set[2]
+            expected_output = value_set[1]
 
             # when
             actual_output = method_to_be_tested(first_value)
